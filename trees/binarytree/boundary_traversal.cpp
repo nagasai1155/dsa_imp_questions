@@ -90,6 +90,27 @@ class Naga{
        
 
     }
+    void printLeaves(Node* root){
+
+    if(root == NULL) return;
+
+    queue<Node*> q;
+    q.push(root);
+
+    while(!q.empty()){
+        Node* temp = q.front();
+        q.pop();
+
+        if(isLeaf(temp))
+            cout << temp->data << "->";
+
+        if(temp->left)
+            q.push(temp->left);
+
+        if(temp->right)
+            q.push(temp->right);
+    }
+}
 
     //full boundary tarversal anti clock wise
     void fullBoundaryTraversal(Node* root){

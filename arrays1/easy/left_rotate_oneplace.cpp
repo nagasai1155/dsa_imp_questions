@@ -17,6 +17,20 @@ void solveLeftRotate(vector<int> arr){
     }
 
 }
+
+void solveleft(vector<int> & arr){
+    
+    int n = arr.size();
+    vector<int> temp(n);
+
+    for(int i=1;i<n;i++){
+        temp[i-1]=arr[i];
+    }
+    temp[n-1]=arr[0];
+    
+
+}
+
 //optimal 
 
 vector<int> leftRotate(vector<int> & arr){

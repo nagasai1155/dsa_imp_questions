@@ -19,6 +19,20 @@ int removeDuplicates(vector<int> &arr){
 
 
 }
+
+int removedup(vector<int> & arr){
+    set<int> st;
+    for(int i=0;i<arr.size();i++){
+        st.insert(arr[i]);
+    }
+
+    int k = st.size();
+    int j=0;
+    for(int it:st){
+        arr[j++]=it;
+    }
+    return k;
+}
 //optimal 
 
 int removeDup(vector<int> & arr){
@@ -36,6 +50,6 @@ int removeDup(vector<int> & arr){
 int main(){
 
     vector<int> arr={1,2,2,3,3,3,4,4,5};
-    int ans=removeDup(arr);
+    int ans=removedup(arr);
     cout<<"size of elements are in unique: "<<ans;
 }

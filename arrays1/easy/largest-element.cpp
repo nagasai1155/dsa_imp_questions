@@ -4,7 +4,7 @@
 using namespace std;
 
 //brute force
-
+//tc:o(nlogn) sc:o(1)
 int largestElement(vector<int> & arr){
 
     int n = arr.size();
@@ -14,7 +14,7 @@ int largestElement(vector<int> & arr){
 }
 
 //optimal 
-
+//tc:o(n) sc:o(1)
 int largestEle(vector<int> & arr){
 
     int n = arr.size();

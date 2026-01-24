@@ -13,7 +13,7 @@ struct Node{
          left = right= NULL;
       }
 };
-//travesals
+//travesals dfs 
 void preorder(Node* root){
     if(root== NULL) return;
     cout<<root->data<<"->";

@@ -54,9 +54,9 @@ vector<int> intersection_of_sorted_arrays(vector<int> & arr1, vector<int> & arr2
 
 int main(){
     //find the union of two sorted arrays
-    vector<int> arr1={1,1,2,3,4,5};
-    vector<int> arr2 ={2,3,4,6,7,9};
-  vector<int> ans= unio_of_sorted_arrays(arr1,arr2);
+    vector<int> arr1={1,1};
+    vector<int> arr2 ={1,7,9};
+  vector<int> ans= intersection_of_sorted_arrays(arr1,arr2);
    for(auto it:ans){
     cout<<it<<" ";
    }

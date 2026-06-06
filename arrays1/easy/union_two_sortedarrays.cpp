@@ -36,6 +36,22 @@ vector<int> unio_of_sorted_arrays(vector<int> & arr1,vector<int> & arr2){
     return uni;
 
 }
+//union
+vector<int> union_of_array(vector<int> & arr1,vector<int> & arr2){
+    map<int,int>mpp;
+    for(int i=0;i<arr1.size();i++){
+        mpp[arr1[i]]++;
+    }
+    for(int i=0;i<arr2.size();i++){
+        mpp[arr2[i]]++;
+    }
+    vector<int> unios;
+    for(auto it:mpp){
+        unios.push_back(it.first);
+    }
+    return unios;
+}
+
 //intersecton 
 vector<int> intersection_of_sorted_arrays(vector<int> & arr1, vector<int> & arr2){
     map<int, int> mpp;
@@ -56,7 +72,7 @@ int main(){
     //find the union of two sorted arrays
     vector<int> arr1={1,1};
     vector<int> arr2 ={1,7,9};
-  vector<int> ans= intersection_of_sorted_arrays(arr1,arr2);
+  vector<int> ans= union_of_array(arr1,arr2);
    for(auto it:ans){
     cout<<it<<" ";
    }

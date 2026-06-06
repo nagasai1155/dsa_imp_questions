@@ -34,7 +34,7 @@ class Naga{
         vector<int> rightvalues;
         Node* temp= root->right;
         
-        while(temp){
+        while(temp != NULL){
             if(!isLeaf(temp)){
                 rightvalues.push_back(temp->data);
             }
@@ -90,7 +90,8 @@ class Naga{
        
 
     }
-    void printLeaves(Node* root){
+    //bfs
+void printLeaves(Node* root){
 
     if(root == NULL) return;
 
@@ -144,7 +145,7 @@ int main()
     root->right->right->right= new Node(8);
     
     Naga c;
-    c.fullBoundaryTraversal(root);
+    c.leafTraversal(root);
 
 
 }

@@ -25,9 +25,10 @@ vector<vector<int>> levelorder(Node* root){
         for(int i=0;i<n;i++){
             Node* newNode= q.front();
             q.pop();
-            if(newNode != NULL) q.push(newNode->left);
-            if(newNode!= NULL) q.push(newNode->right);
-            level.push_back(newNode->data);
+             level.push_back(newNode->data);
+            if(newNode->left!= NULL) q.push(newNode->left);
+            if(newNode ->right!= NULL) q.push(newNode->right);
+           
         }
         ans.push_back(level);
     }
@@ -44,6 +45,14 @@ int main(){
     root->right->left= new Node(6);
     root->right ->right= new Node(7);
    vector<vector<int>> ans1= levelorder(root);
+  
+   for(int i=0;i<ans1.size();i++){
+    for(int j=0;j<ans1[i].size();j++){
+        cout<<ans1[i][j]<<" ";
+    }
+    cout<<endl;
+   }
+
 
 
 }

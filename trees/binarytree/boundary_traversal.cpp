@@ -29,7 +29,7 @@ class Naga{
     }
 
     void rightTraversal(Node* root){
-
+        
         if(root== NULL) return;
         vector<int> rightvalues;
         Node* temp= root->right;

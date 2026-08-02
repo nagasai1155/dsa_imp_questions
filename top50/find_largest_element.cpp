@@ -13,6 +13,17 @@ int findLargest(int arr[],int n){
     return large;
 }
 
+int findsmallestNumber(vector<int> & ans){
+    int n = ans.size();
+    int smallest=ans[0];
+    for(int i=0;i<n;i++){
+        if(ans[i] < smallest){
+            smallest=ans[i];
+        }
+    }
+    return smallest;
+}
+
 //brute
 
 int findLargest1(int arr[],int n){

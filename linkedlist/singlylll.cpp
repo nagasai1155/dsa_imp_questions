@@ -60,7 +60,8 @@ Node* lltraversal(Node* head){
 int main(){
     vector<int> arr= {1,2,3,4,5,6};
     Node* head = covertarrtoll(arr);
-    lltraversal(head);cout<<endl;
+    lltraversal(head);
+        cout<<endl;
    int ll= lengthofll(head);
    cout<<"length of linkedlist: "<< ll<<endl;
    int finds=searcheleinll(head,9);

@@ -3,7 +3,7 @@ using namespace std;
 
 void addEdge(vector<int>adj[],int a,int b){
     adj[a].push_back(b);
-    adj[b].push_back(a);
+  //  adj[b].push_back(a);
 }
 
 void printGraph(vector<int>adj[],int v){
@@ -20,7 +20,7 @@ void printGraph(vector<int>adj[],int v){
 int main(){
 
     int v=5;
-    vector<int> adj[v];
+    vector<int> adj[v+1];
 
     addEdge(adj,1,2);
     addEdge(adj,2,3);

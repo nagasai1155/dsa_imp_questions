@@ -31,7 +31,7 @@ int fibonacciSeries1(int num){
 
 
 int main(){
-    int a =10;
+    int a =2;
   int ans=  fibonacciSeries1(a);
   cout<<"fibonacci series of "<<a<<" is:"<<ans<<endl;
 }

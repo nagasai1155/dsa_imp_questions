@@ -9,6 +9,8 @@ void casecon(string &s){
     }
     cout<<s<<endl;
 }
+
+
 void casecon1(string & s){
 //use toupper();
 int n = s.size();
@@ -24,4 +26,7 @@ cout<<s<<endl;
 int main(){
     string s = "nagabalam";
     casecon1(s);
+
+    char c='a';
+    cout<<(int)c;
 }
